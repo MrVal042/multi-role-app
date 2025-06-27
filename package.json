@@ -1,0 +1,34 @@
+{
+  "name": "multi-role-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Let create and test first mono repo or multi role app",
+  "main": "index.js",
+  "scripts": {
+    "dev:admin": "turbo run dev --filter=admin",
+    "dev:client": "turbo run start --filter=client",
+    "dev:provider": "turbo run start --filter=provider",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "turbo run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrVal042/multi-role-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrVal042/multi-role-app/issues"
+  },
+  "homepage": "https://github.com/MrVal042/multi-role-app#readme",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.13.4"
+  }
+}
