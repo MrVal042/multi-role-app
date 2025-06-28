@@ -404,3 +404,25 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# Expo/Metro
+.expo/
+.expo-shared/
+
+# Node
+node_modules/
+pnpm-lock.yaml
+
+# Builds
+dist/
+build/
+web-build/
+android/
+ios/
+
+# IDEs
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+.turbo/
